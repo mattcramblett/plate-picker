@@ -1,0 +1,45 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* LOGO */
+#header {
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+#header h1 {
+	font-size: 5em;
+}
+
+#plate {
+	font-weight: 900;
+}
+
+/* end LOGO */
+
+
+/* HOME */
+.subheading {
+	text-align: center;
+}
+
+.searchbox {
+	text-align: center;
+	margin: 0 1em;
+}
+
+/* end HOME */
+
+
+/* RESULTS */
+
+.results a {
+	color: #333;
+}
+
+/* end RESULTS */
