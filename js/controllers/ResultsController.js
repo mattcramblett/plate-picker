@@ -1,6 +1,7 @@
-app.controller('ResultsController', ['$scope', 'foods', function($scope, foods) {
-    foods.success(function(data) {
-        $scope.result = data;
-        $scope.results = data.hits;
-    });
+app.controller('ResultsController',  ['$scope', '$routeParams', 'foods', function($scope, $routeParams, foods) {
+	foods.getResults($routeParams.foodQuery)
+		.success(function(data) {
+	        $scope.result = data;
+	        $scope.results = data.hits;
+		});
 }]);

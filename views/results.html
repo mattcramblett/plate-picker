@@ -1,7 +1,9 @@
 <div class="results" ng-repeat="item in results">
 	<a href="#">
-		<h3> {{ item.fields.brand_name }} </h3>
-		<h4> {{ item.fields.item_name }} </h4>
+		<h3> {{ item.fields.item_name }} </h3>
+		<h4> {{ item.fields.brand_name }} </h4>
+		<span>{{ item.fields.nf_serving_size_qty }}</span>
+		<span>{{ item.fields.nf_serving_size_unit }}</span>
 	</a>
 	<hr>
 </div>
