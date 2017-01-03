@@ -10,6 +10,10 @@ app.config(function($routeProvider) {
 			controller: "ResultsController",
 			templateUrl: "views/results.html"
 		})
+		.when('/item/:itemId', {
+			controller: "ItemController",
+			templateUrl: "views/item.html"
+		})
 		.otherwise({
 			redirectTo: '/'
 		});

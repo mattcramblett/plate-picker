@@ -20,6 +20,19 @@ app.factory('foods', ['$http', function($http) {
 				.error(function(err) {
 					return err;
 				});
+			},
+
+			getItem: function(itemId) {
+				appId = "20fc92e6";
+		  		appKey = "1fed9d7856a735c7b71ee0f97608f12f";
+				return $http.get('https://api.nutritionix.com/v1_1/item?id='+itemId+'&appId='+appId+'&appKey=' +appKey)
+				.success(function(data) {
+					return data;
+				})
+				.error(function(err) {
+					return err;
+				});
 			}
+
 		};
 }]);
