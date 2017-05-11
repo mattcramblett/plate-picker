@@ -1,0 +1,9 @@
+<div class="results" ng-repeat="item in myMeal">
+    <a ng-click="viewItem( item._id )">
+        <h3> {{ item.fields.item_name }} </h3>
+        <h4> {{ item.fields.brand_name }} </h4>
+        <span>{{ item.fields.nf_serving_size_qty }}</span>
+        <span>{{ item.fields.nf_serving_size_unit }}</span>
+    </a>
+    <hr>
+</div>

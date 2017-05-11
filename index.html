@@ -2,6 +2,13 @@
 <html>
 
 <head>
+    <title>PlatePicker</title>
+    <meta name="description"
+            content="Quick and easy meal decisions">
+    <meta name="author"
+            content="Matthew Cramblett">
+    <meta name="title"
+            content="PlatePicker">
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -11,6 +18,7 @@
     <!-- AngularJS library -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
     <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-cookies.js"></script>
 </head>
 
 <body ng-app="PlatePickerApp">
@@ -39,7 +47,7 @@
     <script type="text/javascript" src="js/controllers/ItemController.js"></script>
 
     <!-- Directives -->
-
+    <script src="js/directives/addItem.js"></script>
 
     <!-- Services -->
     <script type="text/javascript" src="js/services/foods.js"></script>

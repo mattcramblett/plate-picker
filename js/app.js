@@ -1,4 +1,4 @@
-var app = angular.module('PlatePickerApp', ['ngRoute']);
+var app = angular.module('PlatePickerApp', ['ngRoute', 'ngCookies']);
 
 app.config(function($routeProvider) {
 	$routeProvider
@@ -13,6 +13,10 @@ app.config(function($routeProvider) {
 		.when('/item/:itemId', {
 			controller: "ItemController",
 			templateUrl: "views/item.html"
+		})
+		.when('/meal', {
+			controller: "MealController",
+			templateUrl: "views/meal.html"
 		})
 		.otherwise({
 			redirectTo: '/'
